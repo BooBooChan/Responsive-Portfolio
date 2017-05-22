@@ -1,0 +1,63 @@
+body{color: #777777; background-color:#4aaaa5; font-family:Helvetica; width:960px;}
+img{margin:10px; border:___; border-color:___;}
+
+/*Social Link Options Label*/
+h2{font-family:Times;}
+/*The contact entry labels*/
+h4{font-family:serif;}
+/*The main content*/
+div{background-color:___; width:650px;}
+/*The Social network links*/
+li{margin-bottom:20px;}
+p{margin:10px;}
+/*The website name*/
+.name{color:#4aaaa5; background-color:#ffffff; font-family:Times, serif; padding:___; margin:0;}
+/*The navigation links*/
+.float{margin-right:20px; border:___; float:right;}
+/*The page title*/
+.page{color: #67a9a2; font-family:serif;}
+/*The border for the main body (excluding network sidebar)*/
+.main-body{border-color:#dddddd; background-color:#ffffff;}
+/*So, are margins part of the "background" CSS property? Is that why I only get more white space by adding a margin around my elements?
+/*Selection of portfolio links*/
+.entry{background-color:lightgrey; position:relative; left:150px;}
+/*Portfolio pictures*/
+.portfolio{height:210px; width: 210px;}
+/*Social network box*/
+.network{background-color: white; width:270px; float:right; border-width:2px; border-color:black;}
+/*Copyright footnote*/
+.copyright{background-color:lightgrey; padding:20px; border-color:___; font-family:Arial; width:960px; position:absolute; bottom:0px; margin:0px;}
+/*I instructed .copyright not to have any margin and to stay on bottom of body, but it won't do either of those things. Why not?*/
+
+/*The contact info entries*/
+.contact{border-style:solid;border-width:1px;border-color:black; height:16px; width:500px;}
+/*The send command*/
+#send{margin-top:2em; font-weight:bold; font-size:1.5em;}
+#send:hover{color:orange;}
+/*Message box*/
+#message{border-style:solid;border-width:1px;border-color:black; height:4em; width:500px;}
+#profile{height:200px; width:100px;float:left;}
+
+@media screen and (max-width:980px) {
+body{width:100%;}
+.main-body{width:81%; margin-right:20px;}
+.network{width:218; position:relative; left:20px; margin-width:90px;}
+/*Why won't the .network float all the way to right of page when window is shrunken? Also, Chrome is telling me that .network isn't defining any margins even after input a margin-width.*/
+.copyright{width:980px}
+
+}
+
+@media screen and (max-width:760px) {
+	body{width:100%;}
+
+	.network{width:209px;}
+	.main-body{width: 100%; margin-right:20px;}
+	/*Keep working at that .network class. Width of .network is at 438.81 even when I tell it to remain at */
+}
+	/*Inspect tool on Chrome is telling me that <body> tag doesn't include my social network blocks or footer. That doesn't make sense, or else those elements wouldn't appear on page at all. What's going on?*/
+@media screen and (max-width:640px) {
+	body{width:100%;}
+	.network{width:226px;  }
+	/*Okay... why doesn't my network sidebar retain its 270px width as my @media command states, but does so when I enter "initial," which was 270px?*/
+	.main-body{width:100%; margin-right:0px;}
+}
